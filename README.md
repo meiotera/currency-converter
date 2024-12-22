@@ -1,5 +1,7 @@
 # Currency Converter
 
+Veja o projeto: [Acesse aqui](https://currency-converter-app-renan.netlify.app/)
+
 ### Descrição
 
 Este é um projeto de um **Conversor de Moedas** desenvolvido utilizando **React**, **Next.js** e **TypeScript**. O aplicativo permite que os usuários convertam valores entre diferentes moedas de forma fácil e rápida, utilizando dados da API [Frankfurter](https://www.frankfurter.app/).
@@ -49,11 +51,6 @@ Este é um projeto de um **Conversor de Moedas** desenvolvido utilizando **React
    ```
    http://localhost:3000
    ```
-
-
-### Capturas de Tela
-
-
 
 
 Feito com ❤ por [Renan Ferreira](https://github.com/meiotera).
