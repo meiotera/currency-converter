@@ -3,16 +3,19 @@ import { ReactElement } from "react";
 interface selectTypes {
   selectValue: string;
   setSelectValue: (value: string) => void;
+  isLoading: boolean;
 }
 
 export function SelectCurrency({
   selectValue,
   setSelectValue,
+  isLoading,
 }: selectTypes): ReactElement {
   return (
     <select
       value={selectValue}
       onChange={(e) => setSelectValue(e.target.value)}
+      disabled={isLoading}
     >
       <option value="USD">USD</option>
       <option value="EUR">EUR</option>

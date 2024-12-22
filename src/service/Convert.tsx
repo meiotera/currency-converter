@@ -1,17 +1,19 @@
 "use cliente";
-import { ReactElement, useEffect, useState } from "react";
+import { ReactElement, ReactNode, useEffect, useState } from "react";
 
 interface convertValues {
   selectFrom: string;
   selectTo: string;
   value: string;
+  onLoading: (isLoading: boolean) => void;
 }
 
 export function Convert({
   selectFrom,
   selectTo,
   value,
-}: convertValues): ReactElement {
+  onLoading,
+}: convertValues): ReactNode {
   const [convertedValue, setConvertedValue] = useState("");
 
   useEffect(
@@ -21,6 +23,8 @@ export function Convert({
           return;
         }
 
+        onLoading(true);
+
         const res = await fetch(
           `https://api.frankfurter.dev/v1/latest?base=${from}&symbols=${to}`
         );
@@ -28,6 +32,8 @@ export function Convert({
         const data = await res.json();
         const convertedAmount = (amount * data.rates[to]).toFixed(2);
         setConvertedValue(convertedAmount);
+
+        onLoading(false);
       }
       convert(selectFrom, selectTo, Number(value));
     },

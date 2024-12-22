@@ -9,6 +9,7 @@ export default function Home() {
   const [selectFrom, setSelectFrom] = useState("EUR");
   const [selectTo, setSelectTo] = useState("USD");
   const [value, setValue] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <main>
@@ -22,10 +23,20 @@ export default function Home() {
         <SelectCurrency
           selectValue={selectFrom}
           setSelectValue={setSelectFrom}
+          isLoading={isLoading}
         />
-        <SelectCurrency selectValue={selectTo} setSelectValue={setSelectTo} />
+        <SelectCurrency
+          selectValue={selectTo}
+          setSelectValue={setSelectTo}
+          isLoading={isLoading}
+        />
 
-        <Convert value={value} selectFrom={selectFrom} selectTo={selectTo} />
+        <Convert
+          value={value}
+          selectFrom={selectFrom}
+          selectTo={selectTo}
+          onLoading={setIsLoading}
+        />
       </div>
     </main>
   );
