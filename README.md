@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Currency Converter
 
-## Getting Started
+### Descrição
 
-First, run the development server:
+Este é um projeto de um **Conversor de Moedas** desenvolvido utilizando **React**, **Next.js** e **TypeScript**. O aplicativo permite que os usuários convertam valores entre diferentes moedas de forma fácil e rápida, utilizando dados da API [Frankfurter](https://www.frankfurter.app/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Conversão de valores entre múltiplas moedas.
+- Interface intuitiva com seleção de moeda de origem e destino.
+- Validação de entradas para aceitar apenas números.
+- Atualização dinâmica do valor convertido.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **Next.js**: Framework para aplicações React com suporte a renderização no lado do servidor.
+- **TypeScript**: Linguagem para escrita de código tipado.
+- **CSS**: Estilização moderna para uma interface limpa e responsiva.
 
-## Learn More
+### Requisitos de Instalação
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js (versão 16 ou superior)
+- Gerenciador de pacotes npm ou yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Como Rodar o Projeto Localmente
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone o repositório:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/meiotera/currency-converter.git
+   cd currency-converter
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Instale as dependências:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+
+
+3. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+
+
+4. Acesse no navegador:
+
+   ```
+   http://localhost:3000
+   ```
+
+
+### Capturas de Tela
+
+
+
+
+Feito com ❤ por [Renan Ferreira](https://github.com/meiotera).
+
